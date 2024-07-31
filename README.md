@@ -23,8 +23,8 @@ For example, the cover: h-[200px] md:h-[300px] at the top, the mobile terminal o
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [recipe-page-with-tailwind-css](https://www.frontendmentor.io/solutions/recipe-page-with-tailwind-css-Ii50a98PKE)
+- Live Site URL: [recipe-page](https://mofada.github.io/recipe-page/)
 
 ## Author
 
