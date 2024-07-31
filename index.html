@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Recipe page</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                colors: {
+                    white: 'hsl(0, 0%, 100%)',
+                    stone: {
+                        100: 'hsl(30, 54%, 90%)',
+                        150: 'hsl(30, 18%, 87%)',
+                        600: 'hsl(30, 10%, 34%)',
+                        900: 'hsl(24, 5%, 18%)',
+                    },
+                    brown: {
+                        800: 'hsl(14, 45%, 36%)',
+                    },
+                    rose: {
+                        800: 'hsl(332, 51%, 32%)',
+                        100: 'hsl(330, 100%, 98%)',
+                        50: 'hsl(29, 53%, 90%)',
+                    }
+                },
+                fontFamily: {
+                    young: ["young-serif", 'sans-serif'],
+                    outfit: ['outfit', 'serif'],
+                },
+            }
+        }
+    </script>
+
+    <style>
+        @font-face {
+            font-family: "young-serif";
+            src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+        }
+
+        @font-face {
+            font-family: "outfit";
+            src: url("assets/fonts/outfit/Outfit-VariableFont_wght.ttf") format("truetype");
+        }
+    </style>
+
+    <script>
+        function changOpacity() {
+            const container = document.querySelector('article');
+            // change opacity
+            container.classList.toggle('hidden');
+        }
+    </script>
+</head>
+<body
+        class="w-screen h-screen flex flex-col items-center bg-rose-50 text-base font-outfit overflow-y-auto">
+
+<!-- design template develop use, set screen width 1440 and develop -->
+<img id="design" src="design/desktop-design.jpg" alt="desktop design"
+     class="w-full h-auto z-0 fixed top-0 bottom-0">
+<button class="fixed right-5 bottom-5 text-white" onclick="changOpacity()">Toggle</button>
+
+<article class="w-[736px] bg-white rounded-[20px] mt-[124px] p-10 z-10 opacity-85">
+    <!--cover-->
+    <figure>
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette recipe"
+             class="w-full h-[300px] object-cover rounded-xl">
+    </figure>
+
+    <!--title-->
+    <h1 class="mt-10 font-young text-stone-900 text-4xl font-bold tracking-[2.5px]">
+        Simple Omelette Recipe
+    </h1>
+
+    <!--description-->
+    <p class="mt-5 text-stone-600 text-base font-medium">
+        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs
+        cooked
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+
+    <!--recipe-->
+    <article class="mt-9 bg-rose-100 py-6 px-7 rounded-xl">
+        <h2 class="text-rose-800 text-xl font-bold">Preparation time</h2>
+        <ul class="mt-3 marker:text-rose-800 list-disc pl-6 space-y-2 text-stone-600">
+            <li class="before:content-['Total:'] before:text-stone-900 before:font-bold  pl-4">
+                Approximately 10 minutes
+            </li>
+            <li class="before:content-['Preparation:'] before:text-stone-900 before:font-bold  pl-4">
+                5 minutes
+            </li>
+            <li class="before:content-['Cooking:'] before:text-stone-900 before:font-bold  pl-4">
+                5 minutes
+            </li>
+        </ul>
+    </article>
+
+    <!--ingredients-->
+    <article class="mt-8 ">
+        <h2 class="text-brown-800 text-3xl font-young">Ingredients</h2>
+        <ul class="mt-4 marker:text-rose-800 list-disc pl-6 space-y-2 text-stone-600">
+            <li class="before:content-['2-3 large eggs'] before:text-stone-900 before:font-bold  pl-4">
+                2-3 large eggs
+            </li>
+            <li class="before:content-['Salt, to taste'] before:text-stone-900 before:font-bold  pl-4">
+                Salt, to taste
+            </li>
+            <li class="before:content-['Pepper, to taste'] before:text-stone-900 before:font-bold  pl-4">
+                Pepper, to taste
+            </li>
+            <li class="before:content-['1 tablespoon of butter or oil'] before:text-stone-900 before:font-bold  pl-4">
+                1 tablespoon of butter or oil
+            </li>
+            <li class="before:content-['Optional fillings: cheese, diced vegetables, cooked meats, herbs'] before:text-stone-900 before:font-bold  pl-4">
+                Optional fillings: cheese, diced vegetables, cooked meats, herbs
+            </li>
+        </ul>
+    </article>
+
+
+</article>
+
+
+Ingredients
+
+2-3 large eggs
+Salt, to taste
+Pepper, to taste
+1 tablespoon of butter or oil
+Optional fillings: cheese, diced vegetables, cooked meats, herbs
+
+Instructions
+
+Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+You can add a tablespoon of water or milk for a fluffier texture.
+
+Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+
+Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+the eggs evenly coat the surface.
+
+Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the
+middle, sprinkle your chosen fillings over one half of the omelette.
+
+Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the
+fillings. Let it cook for another minute, then slide it onto a plate.
+
+Enjoy: Serve hot, with additional salt and pepper if needed.
+
+Nutrition
+
+The table below shows nutritional values per serving without the additional fillings.
+
+Calories
+277kcal
+
+Carbs
+0g
+
+Protein
+20g
+
+Fat
+22g
+
+<footer class="fixed bottom-0 inset-x-0 text-[11px] text-center">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-rose-800">
+        Frontend Mentor .
+    </a>
+    Coded by
+    <a href="https://www.frontendmentor.io/profile/mofada" class="text-rose-800">Fada Mo.</a>
+</footer>
+</body>
+</html>
